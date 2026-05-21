@@ -1,0 +1,43 @@
+<svg width="1200" height="72" viewBox="0 0 1200 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0f172a"/>
+      <stop offset="50%"  stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4ade80"/>
+      <stop offset="60%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <!-- Typewriter reveal mask: rect grows from left to right -->
+    <clipPath id="reveal">
+      <rect x="0" y="0" height="72" width="0">
+        <animate attributeName="width"
+          from="0" to="1200"
+          dur="3.5s" begin="0.3s"
+          fill="freeze" calcMode="linear"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="72" fill="url(#bg)"/>
+
+  <!-- Cursor blink -->
+  <rect x="80" y="18" width="3" height="36" fill="#4ade80" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+      from="0,0" to="1050,0"
+      dur="3.5s" begin="0.3s" fill="freeze" calcMode="linear"/>
+  </rect>
+
+  <!-- Revealed text -->
+  <text clip-path="url(#reveal)"
+    x="84" y="48"
+    font-size="26"
+    font-weight="700"
+    font-family="Courier New, Courier, monospace"
+    fill="url(#tg)">
+    My name is Anish and I build production-grade AI systems
+  </text>
+</svg>

@@ -1,7 +1,12 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,40:6d28d9,100:06b6d4&height=220&section=header&text=Anish%20Shirodkar&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%2F%20ML%20Engineer%20%7C%20MS%20CS%20%40%20Rutgers%20University&descAlignY=58&descSize=20" width="100%"/>
+<div align="center">
+  <img src="welcome.svg" width="100%"/>
+  <img src="personal_note.svg" width="100%"/>
+</div>
+
+<br/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=Building+production-grade+AI+systems...;Two-stage+retrieval+%7C+NDCG%4010+%3D+0.692+on+MS+MARCO;LLM+Agents+%7C+RAG+Pipelines+%7C+Computer+Vision;Open+to+Summer+2026+AI%2FML+Internships+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&lines=Two-stage+retrieval+%7C+NDCG%4010+%3D+0.692+on+MS+MARCO;LLM+Agents+%7C+RAG+Pipelines+%7C+Computer+Vision;Open+to+Summer+2026+AI%2FML+Internships+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -95,7 +100,7 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Anish0104&theme=tokyonight&hide_border=true" height="165"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Anish0104&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" width="100%"/>
 </p>
 
 <p align="center">

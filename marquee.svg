@@ -1,58 +1,57 @@
-<svg fill="none" viewBox="0 0 1200 60" width="1200" height="60" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
-        .marquee-wrap {
-          height: 60px;
-          overflow: hidden;
-          position: relative;
-          background: linear-gradient(90deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
-          border-top: 1px solid rgba(167,139,250,0.25);
-          border-bottom: 1px solid rgba(56,189,248,0.25);
-        }
-        .marquee-track {
-          position: absolute;
-          white-space: nowrap;
-          font-family: 'Fira Code', monospace;
-          font-size: 15px;
-          font-weight: 500;
-          color: #a78bfa;
-          line-height: 60px;
-          animation: scroll 22s linear infinite;
-        }
-        .marquee-track span.sep {
-          color: #38bdf8;
-          margin: 0 18px;
-        }
-        .marquee-track span.hi {
-          color: #f472b6;
-        }
-        @keyframes scroll {
-          from { transform: translateX(100vw); }
-          to   { transform: translateX(-100%); }
-        }
-      </style>
-      <div class="marquee-wrap">
-        <div class="marquee-track">
-          <span class="hi">Thanks for visiting!</span>
-          <span class="sep">✦</span>
-          Anish Shirodkar
-          <span class="sep">·</span>
-          AI / ML Engineer
-          <span class="sep">·</span>
-          MS CS @ Rutgers University
-          <span class="sep">✦</span>
-          Two-stage retrieval · NDCG@10 = 0.692
-          <span class="sep">·</span>
-          LLM Agents · RAG · Computer Vision
-          <span class="sep">✦</span>
-          Open to Summer 2026 AI/ML Internships 🚀
-          <span class="sep">·</span>
-          anishshirodkar.me
-          <span class="sep">✦</span>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+<svg width="1200" height="52" viewBox="0 0 1200 52" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0f172a"/>
+      <stop offset="50%"  stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <!-- Fade edges so the scroll looks clean -->
+    <linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0f172a" stop-opacity="1"/>
+      <stop offset="6%"   stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="94%"  stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="52"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="52" fill="url(#bg)"/>
+
+  <!-- Top & bottom accent lines -->
+  <line x1="0" y1="0"  x2="1200" y2="0"  stroke="#a78bfa" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="0" y1="51" x2="1200" y2="51" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Scrolling text group (clipped) -->
+  <g clip-path="url(#clip)">
+    <text
+      y="33"
+      font-size="15"
+      font-weight="600"
+      font-family="'Courier New', Courier, monospace"
+      fill="#a78bfa"
+      letter-spacing="0.5">
+      <!-- The text starts off-screen right and scrolls left. Total content ~2000px wide so we go from +1200 to -2200 -->
+      <animateTransform attributeName="transform" type="translate"
+        from="1200,0" to="-2200,0"
+        dur="22s" repeatCount="indefinite" calcMode="linear"/>
+      <tspan fill="#f472b6">✦ Thanks for visiting! ✦</tspan>
+      <tspan fill="#94a3b8" dx="24"> Anish Shirodkar </tspan>
+      <tspan fill="#38bdf8" dx="6">·</tspan>
+      <tspan fill="#94a3b8" dx="6"> AI / ML Engineer </tspan>
+      <tspan fill="#38bdf8" dx="6">·</tspan>
+      <tspan fill="#94a3b8" dx="6"> MS CS @ Rutgers University </tspan>
+      <tspan fill="#a78bfa" dx="20">✦</tspan>
+      <tspan fill="#94a3b8" dx="20"> Two-stage retrieval · NDCG@10 = 0.692 </tspan>
+      <tspan fill="#38bdf8" dx="6">·</tspan>
+      <tspan fill="#94a3b8" dx="6"> LLM Agents · RAG · Computer Vision </tspan>
+      <tspan fill="#a78bfa" dx="20">✦</tspan>
+      <tspan fill="#4ade80" dx="20"> Open to Summer 2026 AI/ML Internships 🚀 </tspan>
+      <tspan fill="#38bdf8" dx="6">·</tspan>
+      <tspan fill="#94a3b8" dx="6"> anishshirodkar.me </tspan>
+      <tspan fill="#f472b6" dx="20">✦</tspan>
+    </text>
+  </g>
+
+  <!-- Edge fade overlay -->
+  <rect width="1200" height="52" fill="url(#fade)"/>
 </svg>
