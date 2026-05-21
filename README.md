@@ -100,6 +100,10 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
 </p>
 
 <p align="center">
+  <img src="https://streak-stats.demolab.com/?user=Anish0104&theme=tokyonight&hide_border=true" width="49%"/>
+</p>
+
+<p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Anish0104&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" width="100%"/>
 </p>
 
