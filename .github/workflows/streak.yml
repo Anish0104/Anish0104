@@ -1,0 +1,35 @@
+name: Update Streak Card
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # runs daily at 1 AM UTC
+  workflow_dispatch:        # allows manual trigger from Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-streak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate streak card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_streak.py
+
+      - name: Commit streak card
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add streak-card.svg
+          git diff --staged --quiet || git commit -m "chore: update streak card [skip ci]"
+          git push

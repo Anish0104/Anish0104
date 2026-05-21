@@ -1,0 +1,178 @@
+#!/usr/bin/env python3
+"""
+Queries GitHub GraphQL API for contribution data,
+calculates current streak / longest streak / total,
+and writes a styled streak-card.svg to the repo root.
+"""
+import os
+import sys
+import requests
+from datetime import date, timedelta
+
+USERNAME = "Anish0104"
+TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            date
+            contributionCount
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
+
+def fetch():
+    r = requests.post(
+        "https://api.github.com/graphql",
+        json={"query": QUERY, "variables": {"login": USERNAME}},
+        headers={"Authorization": f"Bearer {TOKEN}"},
+        timeout=20,
+    )
+    r.raise_for_status()
+    payload = r.json()
+    if "errors" in payload:
+        print("GraphQL errors:", payload["errors"], file=sys.stderr)
+        sys.exit(1)
+    cal = payload["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    return cal
+
+
+def calculate(cal):
+    total = cal["totalContributions"]
+    days = sorted(
+        (day["date"], day["contributionCount"])
+        for week in cal["weeks"]
+        for day in week["contributionDays"]
+    )
+
+    today = date.today().isoformat()
+
+    # ── Current streak ────────────────────────────────────────────────────────
+    current = 0
+    for d, count in reversed(days):
+        if d > today:
+            continue
+        if count > 0:
+            current += 1
+        elif d == today:
+            pass   # today may not have contributions yet — don't break
+        else:
+            break  # gap found
+
+    # ── Longest streak (past year) ────────────────────────────────────────────
+    longest = run = 0
+    for _, count in days:
+        if count > 0:
+            run += 1
+            if run > longest:
+                longest = run
+        else:
+            run = 0
+
+    return total, current, longest
+
+
+def make_svg(total, current, longest):
+    updated = date.today().strftime("%b %d, %Y")
+    return f"""<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#1f2335"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#7dcfff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="495" height="195" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="493" height="193" rx="13" fill="none"
+        stroke="url(#border)" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="247" y="36" text-anchor="middle"
+        font-size="14" font-weight="600"
+        font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#c0caf5">GitHub Contribution Streak</text>
+
+  <!-- Title separator -->
+  <line x1="24" y1="50" x2="471" y2="50"
+        stroke="#7aa2f7" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Vertical column dividers -->
+  <line x1="199" y1="62" x2="199" y2="160"
+        stroke="#7aa2f7" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="346" y1="62" x2="346" y2="160"
+        stroke="#7aa2f7" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- ── Col 1 · Total Contributions ─────────────────────────────────────── -->
+  <text x="100" y="108" text-anchor="middle"
+        font-size="38" font-weight="800"
+        font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#7dcfff" filter="url(#glow)">{total}</text>
+  <text x="100" y="132" text-anchor="middle"
+        font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">Total</text>
+  <text x="100" y="148" text-anchor="middle"
+        font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">Contributions</text>
+
+  <!-- ── Col 2 · Current Streak ─────────────────────────────────────────── -->
+  <text x="272" y="83" text-anchor="middle" font-size="18">🔥</text>
+  <text x="272" y="114" text-anchor="middle"
+        font-size="38" font-weight="800"
+        font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#ff9e64" filter="url(#glow)">{current}</text>
+  <text x="272" y="138" text-anchor="middle"
+        font-size="11" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">days</text>
+  <text x="272" y="154" text-anchor="middle"
+        font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">Current Streak</text>
+
+  <!-- ── Col 3 · Longest Streak ─────────────────────────────────────────── -->
+  <text x="420" y="108" text-anchor="middle"
+        font-size="38" font-weight="800"
+        font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#9ece6a" filter="url(#glow)">{longest}</text>
+  <text x="420" y="132" text-anchor="middle"
+        font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">Longest</text>
+  <text x="420" y="148" text-anchor="middle"
+        font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#565f89">Streak</text>
+
+  <!-- Footer -->
+  <text x="247" y="178" text-anchor="middle"
+        font-size="11" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+        fill="#3b3f55">Updated {updated}</text>
+</svg>"""
+
+
+def main():
+    cal = fetch()
+    total, current, longest = calculate(cal)
+    svg = make_svg(total, current, longest)
+    with open("streak-card.svg", "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"streak-card.svg written — total={total}, current={current}, longest={longest}")
+
+
+if __name__ == "__main__":
+    main()

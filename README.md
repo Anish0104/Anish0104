@@ -100,7 +100,7 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
 </p>
 
 <p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Anish0104&theme=tokyonight&hide_border=true"/>
+  <img src="streak-card.svg" height="195"/>
 </p>
 
 <p align="center">
