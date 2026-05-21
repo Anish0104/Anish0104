@@ -89,13 +89,13 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anish0104&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="165"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Anish0104&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anish0104&layout=compact&theme=tokyonight&hide_border=true&count_private=true&langs_count=8" height="165"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Anish0104&layout=compact&theme=tokyonight&hide_border=true&count_private=true&langs_count=8" height="165"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Anish0104&theme=tokyonight&hide_border=true&fire=DD2727&ring=6d28d9&currStreakLabel=58A6FF" height="165"/>
+  <img src="https://streak-stats.demolab.com/?user=Anish0104&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
 <p align="center">
@@ -113,7 +113,7 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
   </tr>
   <tr>
     <td>🧪</td>
-    <td><b>GSoC 2026 Applicant</b> — Submitted proposals for OLMo-7B LLM integration into DeepChem (<a href="https://github.com/deepchem/deepchem/pull/4876">PR #4876</a> merged) and probabilistic weather forecasting for MLLAM</td>
+    <td><b>GSoC 2026 Applicant</b> — Submitted proposals for OLMo-7B LLM integration into DeepChem (<a href="https://github.com/deepchem/deepchem/pull/4876">PR #4876</a>) and probabilistic weather forecasting for MLLAM</td>
   </tr>
   <tr>
     <td>🎓</td>
@@ -130,5 +130,7 @@ My focus is on **information retrieval and LLM engineering**. My latest semantic
 - 💬 **Ask me about:** RAG systems, two-stage retrieval, LLM agents, or getting ML projects production-ready
 
 <br/>
+
+<img src="marquee.svg" width="100%"/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,60:6d28d9,100:0f172a&height=120&section=footer" width="100%"/>

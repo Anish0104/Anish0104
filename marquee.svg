@@ -1,0 +1,58 @@
+<svg fill="none" viewBox="0 0 1200 60" width="1200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+        .marquee-wrap {
+          height: 60px;
+          overflow: hidden;
+          position: relative;
+          background: linear-gradient(90deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+          border-top: 1px solid rgba(167,139,250,0.25);
+          border-bottom: 1px solid rgba(56,189,248,0.25);
+        }
+        .marquee-track {
+          position: absolute;
+          white-space: nowrap;
+          font-family: 'Fira Code', monospace;
+          font-size: 15px;
+          font-weight: 500;
+          color: #a78bfa;
+          line-height: 60px;
+          animation: scroll 22s linear infinite;
+        }
+        .marquee-track span.sep {
+          color: #38bdf8;
+          margin: 0 18px;
+        }
+        .marquee-track span.hi {
+          color: #f472b6;
+        }
+        @keyframes scroll {
+          from { transform: translateX(100vw); }
+          to   { transform: translateX(-100%); }
+        }
+      </style>
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span class="hi">Thanks for visiting!</span>
+          <span class="sep">✦</span>
+          Anish Shirodkar
+          <span class="sep">·</span>
+          AI / ML Engineer
+          <span class="sep">·</span>
+          MS CS @ Rutgers University
+          <span class="sep">✦</span>
+          Two-stage retrieval · NDCG@10 = 0.692
+          <span class="sep">·</span>
+          LLM Agents · RAG · Computer Vision
+          <span class="sep">✦</span>
+          Open to Summer 2026 AI/ML Internships 🚀
+          <span class="sep">·</span>
+          anishshirodkar.me
+          <span class="sep">✦</span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
