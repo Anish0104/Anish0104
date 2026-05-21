@@ -1,13 +1,62 @@
-<svg width="600" height="320" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#1e1b4b"/>
-<stop offset="100%" stop-color="#0f172a"/>
-</linearGradient>
-</defs>
-<rect width="600" height="320" rx="24" fill="url(#g2)"/>
-<text x="40" y="90" fill="#a78bfa" font-size="16">LLM Application</text>
-<text x="40" y="140" fill="white" font-size="28" font-weight="bold">SkillGap</text>
-<text x="40" y="190" fill="#94a3b8" font-size="16">AI career assistant</text>
-<text x="40" y="240" fill="#f472b6" font-size="14">Gemini • Next.js • Supabase</text>
+<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card">
+      <rect width="600" height="320" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <rect width="600" height="320" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="598" height="318" rx="24" fill="none" stroke="url(#accent)" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Glow orb -->
+  <circle cx="520" cy="60" r="80" fill="#a78bfa" opacity="0.12" filter="url(#glow)">
+    <animate attributeName="r" values="80;100;80" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.12;0.22;0.12" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Shimmer -->
+  <g clip-path="url(#card)">
+    <rect width="300" height="320" fill="white" fill-opacity="0.03">
+      <animateTransform attributeName="transform" type="translate" values="-300,0;900,0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tag -->
+  <rect x="40" y="40" width="120" height="28" rx="14" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="55" y="58" fill="#a78bfa" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="700">LLM Application</text>
+
+  <!-- Title -->
+  <text x="40" y="122" fill="white" font-size="36" font-family="Inter, Arial, sans-serif" font-weight="800">SkillGap AI</text>
+
+  <!-- Description -->
+  <text x="40" y="162" fill="#94a3b8" font-size="15" font-family="Inter, Arial, sans-serif">Stateful multi-turn AI career interviewer</text>
+  <text x="40" y="184" fill="#94a3b8" font-size="15" font-family="Inter, Arial, sans-serif">grounded to your actual experience</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="210" x2="560" y2="210" stroke="white" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Tech badges -->
+  <rect x="40" y="232" width="92" height="28" rx="14" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="56" y="250" fill="#e2e8f0" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="600">Gemini 2.5</text>
+
+  <rect x="142" y="232" width="80" height="28" rx="14" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="158" y="250" fill="#e2e8f0" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="600">Next.js 15</text>
+
+  <rect x="232" y="232" width="84" height="28" rx="14" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="248" y="250" fill="#e2e8f0" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="600">Supabase</text>
+
+  <!-- Metric -->
+  <text x="40" y="296" fill="#a78bfa" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="600">Entity extraction · Gap ranking · AI interview</text>
 </svg>
