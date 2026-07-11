@@ -39,7 +39,7 @@
   <text x="100" y="108" text-anchor="middle"
         font-size="38" font-weight="800"
         font-family="Segoe UI, Ubuntu, Arial, sans-serif"
-        fill="#7dcfff" filter="url(#glow)">476</text>
+        fill="#7dcfff" filter="url(#glow)">477</text>
   <text x="100" y="132" text-anchor="middle"
         font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
         fill="#565f89">Total</text>
@@ -52,7 +52,7 @@
   <text x="272" y="114" text-anchor="middle"
         font-size="38" font-weight="800"
         font-family="Segoe UI, Ubuntu, Arial, sans-serif"
-        fill="#ff9e64" filter="url(#glow)">1</text>
+        fill="#ff9e64" filter="url(#glow)">2</text>
   <text x="272" y="138" text-anchor="middle"
         font-size="11" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
         fill="#565f89">days</text>
@@ -75,5 +75,5 @@
   <!-- Footer -->
   <text x="247" y="178" text-anchor="middle"
         font-size="11" font-family="Segoe UI, Ubuntu, Arial, sans-serif"
-        fill="#3b3f55">Updated Jul 10, 2026</text>
+        fill="#3b3f55">Updated Jul 11, 2026</text>
 </svg>
