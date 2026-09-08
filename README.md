@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0F172A,50:2563EB,100:7C3AED&text=Anish%20Shirodkar&fontColor=FFFFFF&fontSize=38&fontAlignY=35&desc=MS%20CS%20%40%20Rutgers%20%7C%20AI%2FML&descSize=16&descAlignY=56&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0F172A,50:2563EB,100:7C3AED&text=Anish%20Shirodkar&fontColor=FFFFFF&fontSize=38&fontAlignY=35&desc=MS%20CS%20%40%20Rutgers%20%7C%20AI%2FML&descSize=16&descAlignY=56&animation=fadeIn" width="100%" alt="Anish Shirodkar" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=650&lines=Building+retrieval+systems+and+LLM+agents;Working+across+search%2C+agents%2C+and+computer+vision" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=650&lines=Building+retrieval+systems+and+LLM+agents;Working+across+search%2C+agents%2C+and+computer+vision" alt="Typing animation" />
 </a>
 
-<br>
+<br><br>
 
 <a href="https://anishshirodkar.me">Portfolio</a>
 &nbsp;·&nbsp;
@@ -18,72 +18,117 @@
 
 <br>
 
+### About
+
+MS Computer Science student at **Rutgers University**, focused on building retrieval systems, LLM agents, and applied machine learning products.
+
+Currently working on semantic search, agent workflows, and computer vision.
+
+<br>
+
 ### Selected work
 
-**[Semantic Search](https://github.com/Anish0104/semantic-search)**  
-Two-stage retrieval on MS MARCO. A bi-encoder retrieves 100 candidates, then a cross-encoder reranks the top 10. Reached **0.692 NDCG@10**, a 143% improvement over BM25.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-`sentence-transformers` · `Qdrant` · `FastAPI`
+#### [Semantic Search ↗](https://github.com/Anish0104/semantic-search)
 
-<br>
+Two-stage retrieval on MS MARCO using a bi-encoder and cross-encoder reranker.
 
-**[SkillGap](https://github.com/Anish0104/SkillGap)**  
-Compares resumes with job descriptions, identifies missing skills, and runs multi-turn interviews based on the candidate's actual experience.
+**0.692 NDCG@10** · **143% above BM25**
 
-`Gemini 2.5 Flash` · `Next.js` · `Supabase`
+`sentence-transformers` `Qdrant` `FastAPI`
 
-<br>
+</td>
+<td width="50%" valign="top">
 
-**[Vouch](https://github.com/Anish0104/vouch)**  
-A trust layer for multi-agent systems. Agents can act with scoped credentials without exposing the user's raw tokens.
+#### [SkillGap ↗](https://github.com/Anish0104/SkillGap)
 
-`Auth0 Token Vault` · `LLaMA 3.3 70B` · `React`
+Compares resumes with job descriptions, identifies skill gaps, and runs interviews grounded in the candidate's experience.
 
-<br>
+`Gemini 2.5 Flash` `Next.js` `Supabase`
 
-**[QuantVision](https://github.com/Anish0104/QuantVision)**  
-A PPO trading agent trained in a custom Gymnasium environment and tested across the 2008, 2020, and 2022 market regimes.
+</td>
+</tr>
 
-`Stable-Baselines3` · `FastAPI` · `Next.js`
+<tr>
+<td width="50%" valign="top">
 
-<br>
+#### [Vouch ↗](https://github.com/Anish0104/vouch)
 
-**[VTrack](https://github.com/Anish0104/Vtrack-Traffic_Analysis_System)**  
-Detects, tracks, counts, and estimates the speed of multiple vehicles from live video.
+Lets AI agents use scoped credentials without exposing the user's raw tokens.
 
-`YOLOv8` · `ByteTrack` · `OpenCV`
+`Auth0 Token Vault` `LLaMA 3.3 70B` `React`
 
-<br>
+</td>
+<td width="50%" valign="top">
 
-**DocPilot**  
-A local document question-answering system that retrieves relevant PDF sections before generating a response.
+#### [QuantVision ↗](https://github.com/Anish0104/QuantVision)
 
-`LLaMA 3.1` · `ChromaDB` · `Streamlit`
+PPO trading agent tested across the 2008, 2020, and 2022 market regimes.
+
+`Stable-Baselines3` `Gymnasium` `FastAPI`
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+#### [VTrack ↗](https://github.com/Anish0104/Vtrack-Traffic_Analysis_System)
+
+Detects, tracks, counts, and estimates the speed of vehicles from live video.
+
+`YOLOv8` `ByteTrack` `OpenCV`
+
+</td>
+<td width="50%" valign="top">
+
+#### DocPilot
+
+Answers questions from local PDFs by retrieving the most relevant sections first.
+
+`LLaMA 3.1` `ChromaDB` `Streamlit`
+
+</td>
+</tr>
+</table>
 
 <br>
 
 ### Toolkit
 
-`Python` · `C++` · `PyTorch` · `Hugging Face` · `LangChain` · `FastAPI` · `Next.js` · `PostgreSQL` · `Docker`
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,fastapi,nextjs,react,postgres,supabase,docker,git&theme=dark" alt="Technology stack" />
+
+<br><br>
+
+`Hugging Face` · `LangChain` · `Qdrant` · `ChromaDB` · `OpenCV`
+
+</div>
 
 <br>
 
 ### Recognition
 
-Government of India copyright for an Attention-LSTM weather forecasting system built for the India Meteorological Department.
+Government of India copyright for an **Attention-LSTM weather forecasting system** built for the India Meteorological Department.
 
 `LD-20250175526` · `2025`
 
 <br>
 
+### GitHub activity
+
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&theme=transparent&hide_border=true&ring=60A5FA&fire=8B5CF6&currStreakLabel=60A5FA&sideLabels=94A3B8&dates=64748B&stroke=1E293B" alt="GitHub streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&theme=transparent&hide_border=true&ring=60A5FA&fire=8B5CF6&currStreakLabel=60A5FA&sideLabels=94A3B8&dates=64748B&stroke=1E293B" alt="GitHub contribution streak" />
 
 <br><br>
 
 <sub>Always building, testing, and learning.</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:7C3AED,50:2563EB,100:0F172A" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:7C3AED,50:2563EB,100:0F172A" width="100%" alt="" />
 
 </div>
