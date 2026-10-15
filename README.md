@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/at-work.gif" width="100%" alt="Anish at work: typing on a laptop next to a notebook of small ideas, a coffee, and a sleeping cat" />
+<img src="assets/header.gif" width="100%" alt="Pixel-art Anish flying a paper airplane while coding on a laptop" />
 
 <br>
 
-### Anish Shirodkar
+<h1>Anish Shirodkar</h1>
 
-<sub>AI/ML software engineer &nbsp;·&nbsp; MS Computer Science @ Rutgers, May 2027</sub>
+<b>AI/ML Software Engineer</b> &nbsp;·&nbsp; MS Computer Science @ Rutgers, May 2027
 
 <br><br>
 
-<a href="https://anishshirodkar.me"><img src="https://img.shields.io/badge/portfolio-anishshirodkar.me-343B37?style=flat-square" alt="Portfolio" /></a>
-<a href="https://linkedin.com/in/anish-shirodkar-a208452a9"><img src="https://img.shields.io/badge/linkedin-anish--shirodkar-738260?style=flat-square" alt="LinkedIn" /></a>
-<img src="https://img.shields.io/badge/open%20to-2027%20new--grad%20SWE%20%2F%20ML%20roles-B78869?style=flat-square" alt="Open to 2027 new-grad SWE and ML roles" />
+<a href="https://anishshirodkar.me"><img src="https://img.shields.io/badge/portfolio-anishshirodkar.me-3F3736?style=flat-square" alt="Portfolio" /></a>
+<a href="https://linkedin.com/in/anish-shirodkar-a208452a9"><img src="https://img.shields.io/badge/linkedin-anish--shirodkar-606349?style=flat-square" alt="LinkedIn" /></a>
+<img src="https://img.shields.io/badge/open%20to-2027%20new--grad%20SWE%20%2F%20ML%20roles-704F36?style=flat-square" alt="Open to 2027 new-grad SWE and ML roles" />
 
 </div>
 
@@ -146,10 +146,10 @@ Answers questions from ML library docs by retrieving the most relevant sections 
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&hide_border=true&background=FAF5E9&ring=738260&fire=B78869&currStreakNum=343B37&sideNums=343B37&currStreakLabel=738260&sideLabels=75563E&dates=8A8F86&stroke=E5DCCB" alt="GitHub contribution streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&hide_border=true&background=F8F3E7&ring=606349&fire=704F36&currStreakNum=3F3736&sideNums=3F3736&currStreakLabel=606349&sideLabels=75563E&dates=8A8F86&stroke=E5DCCB" alt="GitHub contribution streak" />
 
 <br><br>
 
-<sub>one idea at a time.</sub>
+<sub>always building.</sub>
 
 </div>
