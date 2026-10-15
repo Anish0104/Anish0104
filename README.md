@@ -1,120 +1,122 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0F172A,50:2563EB,100:7C3AED&text=Anish%20Shirodkar&fontColor=FFFFFF&fontSize=38&fontAlignY=35&desc=MS%20CS%20%40%20Rutgers%20%7C%20AI%2FML&descSize=16&descAlignY=56&animation=fadeIn" width="100%" alt="Anish Shirodkar" />
+<img src="assets/at-work.gif" width="100%" alt="Anish at work: typing on a laptop next to a notebook of small ideas, a coffee, and a sleeping cat" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=650&lines=Building+retrieval+systems+and+LLM+agents;Working+across+search%2C+agents%2C+and+computer+vision;Open+to+2027+new-grad+SWE+%2F+ML+roles" alt="Typing animation" />
-</a>
+<br>
+
+### Anish Shirodkar
+
+<sub>AI/ML software engineer &nbsp;·&nbsp; MS Computer Science @ Rutgers, May 2027</sub>
 
 <br><br>
 
-<a href="https://anishshirodkar.me">Portfolio</a>
-&nbsp;·&nbsp;
-<a href="https://linkedin.com/in/anish-shirodkar-a208452a9">LinkedIn</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/Anish0104?tab=repositories">Projects</a>
+<a href="https://anishshirodkar.me"><img src="https://img.shields.io/badge/portfolio-anishshirodkar.me-343B37?style=flat-square" alt="Portfolio" /></a>
+<a href="https://linkedin.com/in/anish-shirodkar-a208452a9"><img src="https://img.shields.io/badge/linkedin-anish--shirodkar-738260?style=flat-square" alt="LinkedIn" /></a>
+<img src="https://img.shields.io/badge/open%20to-2027%20new--grad%20SWE%20%2F%20ML%20roles-B78869?style=flat-square" alt="Open to 2027 new-grad SWE and ML roles" />
 
 </div>
 
 <br>
 
-### About
+### about
 
-MS Computer Science student at **Rutgers University** (graduating May 2027), focused on building retrieval systems, LLM agents, and applied machine learning products.
+I build retrieval systems, LLM agents, and applied ML products, and I like taking them all the way from a model in a notebook to something deployed that people can use.
 
-**Open to full-time new-grad Software Engineering and ML Engineering roles starting 2027.**
+**Now building**
 
-Currently working on:
-- **[Adaptive Conformal Prediction under regime shifts](https://github.com/Anish0104/Aci-regime-shifts)**: how fast ACI recovers coverage after abrupt and gradual distribution shifts in time series, with an LSTM forecaster, CQR, and Amazon Chronos
+- **[Adaptive conformal prediction under regime shifts](https://github.com/Anish0104/Aci-regime-shifts)**: how quickly ACI recovers target coverage after abrupt and gradual shifts in time series, using an LSTM forecaster, CQR, and Amazon Chronos
 - **[Margin](https://github.com/Anish0104/campus-knowledge-assistant)**: a RAG assistant that answers questions from Rutgers documents with cited sources
 
 <br>
 
-### Selected work
+### selected work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### [Semantic Search ↗](https://github.com/Anish0104/semantic-search)
+**[Semantic Search ↗](https://github.com/Anish0104/semantic-search)**
 
-Two-stage retrieval on MS MARCO using a bi-encoder and cross-encoder reranker.
+Two-stage retrieval on MS MARCO: a bi-encoder retrieves, a cross-encoder reranks.
 
-**0.692 NDCG@10** · **143% above BM25**
+**0.692 NDCG@10** · **+143% over BM25**
 
-`sentence-transformers` `Qdrant` `FastAPI`
-
-</td>
-<td width="50%" valign="top">
-
-#### [SkillGap ↗](https://github.com/Anish0104/SkillGap)
-
-Compares resumes with job descriptions, identifies skill gaps, and runs interviews grounded in the candidate's experience.
-
-`Gemini 2.5 Flash` `Next.js` `Supabase`
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-#### [Vouch ↗](https://github.com/Anish0104/vouch)
-
-Lets AI agents use scoped credentials without exposing the user's raw tokens.
-
-`Auth0 Token Vault` `LLaMA 3.3 70B` `React`
+<sub>`sentence-transformers` `Qdrant` `FastAPI` `Docker`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-#### [QuantVision ↗](https://github.com/Anish0104/QuantVision)
+**[Cerevia ↗](https://cerevia.dev)**
 
-PPO trading agent tested across the 2008, 2020, and 2022 market regimes.
+Operations command center for tele-neurology: real-time ops intelligence and physician workload management, on web and mobile.
 
-`Stable-Baselines3` `Gymnasium` `FastAPI`
+**1st place, Sevaro track** · Rutgers Health Hack 2026
+
+<sub>`web app` `mobile app` `healthcare`</sub>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-#### [VTrack ↗](https://github.com/Anish0104/Vtrack-Traffic_Analysis_System)
+**[RedirectIQ ↗](https://github.com/Anish0104/RedirectIQ-WebFrameworksComparison)**
+
+A production-style URL shortener built on four backend stacks and benchmarked head to head.
+
+**4 stacks** · load-tested from **1 to 500** concurrent users for throughput and p50/p99 latency
+
+<sub>`Node.js` `Flask` `Nginx` `Docker` `Locust`</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[VTrack ↗](https://github.com/Anish0104/Vtrack-Traffic_Analysis_System)**
 
 Detects, tracks, counts, and estimates the speed of vehicles from live video.
 
-`YOLOv8` `ByteTrack` `OpenCV`
+**Real-time** detection, tracking, and calibrated speed estimation
 
-</td>
-<td width="50%" valign="top">
-
-#### [RedirectIQ ↗](https://github.com/Anish0104/RedirectIQ-WebFrameworksComparison)
-
-A production-style URL shortener built on four backend stacks and load-tested from 1 to 500 concurrent users for throughput and p50/p99 latency.
-
-`Node.js` `Flask` `Nginx` `Docker` `Locust`
+<sub>`YOLOv8` `ByteTrack` `OpenCV` `React`</sub>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-#### [Cerevia ↗](https://cerevia.dev)
+**[Vouch ↗](https://github.com/Anish0104/vouch)**
 
-Operations command center for tele-neurology: real-time ops intelligence and physician workload management. 1st place, Sevaro track, Rutgers Health Hack 2026.
+Lets AI agents act on a user's behalf with scoped, auditable credentials instead of raw tokens.
 
-`Web app` `Mobile app` `Healthcare`
+<sub>`Auth0 Token Vault` `LLaMA 3.3 70B` `Node.js` `React`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-#### [DocPilot ↗](https://github.com/Anish0104/DocPilot)
+**[QuantVision ↗](https://github.com/Anish0104/QuantVision)**
 
-Answers questions from documentation by retrieving the most relevant sections first, with sources cited on every answer.
+A PPO trading agent stress-tested across the 2008, 2020, and 2022 market regimes, scored on Sharpe, Sortino, and max drawdown.
 
-`LLaMA 3.1` `ChromaDB` `Streamlit`
+<sub>`Stable-Baselines3` `Gymnasium` `FastAPI` `Next.js`</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[SkillGap ↗](https://github.com/Anish0104/SkillGap)**
+
+Compares a resume with a job description, finds the skill gaps, and runs a mock interview grounded in the candidate's experience.
+
+<sub>`Gemini 2.5 Flash` `Next.js` `Supabase`</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[DocPilot ↗](https://github.com/Anish0104/DocPilot)**
+
+Answers questions from ML library docs by retrieving the most relevant sections first, with sources cited on every answer.
+
+<sub>`LLaMA 3.1` `ChromaDB` `Streamlit`</sub>
 
 </td>
 </tr>
@@ -122,42 +124,32 @@ Answers questions from documentation by retrieving the most relevant sections fi
 
 <br>
 
-### Toolkit
+### toolkit
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,fastapi,nextjs,react,postgres,supabase,docker,git&theme=dark" alt="Technology stack" />
-
-<br><br>
-
-`Hugging Face` · `LangChain` · `Qdrant` · `ChromaDB` · `OpenCV`
-
-</div>
+| | |
+|---|---|
+| **languages** | `Python` `TypeScript` `JavaScript` `C++` `SQL` |
+| **ml & retrieval** | `PyTorch` `Hugging Face` `sentence-transformers` `LangChain` `Qdrant` `ChromaDB` `OpenCV` |
+| **backend & web** | `FastAPI` `Flask` `Node.js` `React` `Next.js` |
+| **data & infra** | `PostgreSQL` `Supabase` `Docker` `Git` |
 
 <br>
 
-### Recognition
+### recognition
 
-Government of India copyright for an **Attention-LSTM weather forecasting system** built for the India Meteorological Department.
-
-`LD-20250175526` · `2025`
-
-**1st place, Sevaro track** at **Rutgers Health Hack 2026** with team Healthy Hackers, for Cerevia.
-
-`Oct 2026`
+- **1st place, Sevaro track**, Rutgers Health Hack 2026, with team Healthy Hackers for Cerevia
+- **Government of India copyright** for an Attention-LSTM weather forecasting system built for the India Meteorological Department <sub>`LD-20250175526` · 2025</sub>
 
 <br>
 
-### GitHub activity
+### activity
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&theme=transparent&hide_border=true&ring=60A5FA&fire=8B5CF6&currStreakLabel=60A5FA&sideLabels=94A3B8&dates=64748B&stroke=1E293B" alt="GitHub contribution streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Anish0104&hide_border=true&background=FAF5E9&ring=738260&fire=B78869&currStreakNum=343B37&sideNums=343B37&currStreakLabel=738260&sideLabels=75563E&dates=8A8F86&stroke=E5DCCB" alt="GitHub contribution streak" />
 
 <br><br>
 
-<sub>Always building, testing, and learning.</sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:7C3AED,50:2563EB,100:0F172A" width="100%" alt="" />
+<sub>one idea at a time.</sub>
 
 </div>
