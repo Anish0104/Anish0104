@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0F172A,50:2563EB,100:7C3AED&text=Anish%20Shirodkar&fontColor=FFFFFF&fontSize=38&fontAlignY=35&desc=MS%20CS%20%40%20Rutgers%20%7C%20AI%2FML&descSize=16&descAlignY=56&animation=fadeIn" width="100%" alt="Anish Shirodkar" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=650&lines=Building+retrieval+systems+and+LLM+agents;Working+across+search%2C+agents%2C+and+computer+vision" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=650&lines=Building+retrieval+systems+and+LLM+agents;Working+across+search%2C+agents%2C+and+computer+vision;Open+to+2027+new-grad+SWE+%2F+ML+roles" alt="Typing animation" />
 </a>
 
 <br><br>
@@ -20,9 +20,13 @@
 
 ### About
 
-MS Computer Science student at **Rutgers University**, focused on building retrieval systems, LLM agents, and applied machine learning products.
+MS Computer Science student at **Rutgers University** (graduating May 2027), focused on building retrieval systems, LLM agents, and applied machine learning products.
 
-Currently working on semantic search, agent workflows, and computer vision.
+**Open to full-time new-grad Software Engineering and ML Engineering roles starting 2027.**
+
+Currently working on:
+- **[Adaptive Conformal Prediction under regime shifts](https://github.com/Anish0104/Aci-regime-shifts)**: how fast ACI recovers coverage after abrupt and gradual distribution shifts in time series, with an LSTM forecaster, CQR, and Amazon Chronos
+- **[Margin](https://github.com/Anish0104/campus-knowledge-assistant)**: a RAG assistant that answers questions from Rutgers documents with cited sources
 
 <br>
 
@@ -85,9 +89,30 @@ Detects, tracks, counts, and estimates the speed of vehicles from live video.
 </td>
 <td width="50%" valign="top">
 
-#### DocPilot
+#### [RedirectIQ ↗](https://github.com/Anish0104/RedirectIQ-WebFrameworksComparison)
 
-Answers questions from local PDFs by retrieving the most relevant sections first.
+A production-style URL shortener built on four backend stacks and load-tested from 1 to 500 concurrent users for throughput and p50/p99 latency.
+
+`Node.js` `Flask` `Nginx` `Docker` `Locust`
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+#### [Cerevia ↗](https://cerevia.dev)
+
+Operations command center for tele-neurology: real-time ops intelligence and physician workload management. 1st place, Sevaro track, Rutgers Health Hack 2026.
+
+`Web app` `Mobile app` `Healthcare`
+
+</td>
+<td width="50%" valign="top">
+
+#### [DocPilot ↗](https://github.com/Anish0104/DocPilot)
+
+Answers questions from documentation by retrieving the most relevant sections first, with sources cited on every answer.
 
 `LLaMA 3.1` `ChromaDB` `Streamlit`
 
@@ -116,6 +141,10 @@ Answers questions from local PDFs by retrieving the most relevant sections first
 Government of India copyright for an **Attention-LSTM weather forecasting system** built for the India Meteorological Department.
 
 `LD-20250175526` · `2025`
+
+**1st place, Sevaro track** at **Rutgers Health Hack 2026** with team Healthy Hackers, for Cerevia.
+
+`Oct 2026`
 
 <br>
 
